@@ -1,0 +1,6 @@
+verify( {0xadd001ffffffffffffffffffffffffffffffffff,
+         0xadd002ffffffffffffffffffffffffffffffffff,
+         0xadd003ffffffffffffffffffffffffffffffffff},
+        1);
+transfer(0xadd001ffffffffffffffffffffffffffffffffff, 1);
+transfer(0xadd002ffffffffffffffffffffffffffffffffff, 2);
