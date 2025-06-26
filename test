@@ -1,0 +1,16 @@
+ #!/bin/bash
+
+TOTAL_TESTS=2
+
+echo "kompiling setl.k..."
+kompile setl.k
+
+echo "success."
+echo "-------------------"
+
+echo "There are $TOTAL_TESTS tests."
+echo "-------------------"
+
+for ((i = 1 ; i <= $TOTAL_TESTS ; i++ ));
+  do echo "running test_$i"; krun "tests/test_$i.setl"; 
+done
